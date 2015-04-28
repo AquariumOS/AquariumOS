@@ -21,5 +21,6 @@ void setup(){
 // Main Program
 void loop(){
 	sensors.requestTemperatures();
-	Serial.println(sensors.getTempCByIndex(0));
+	float temp = sensors.getTempCByIndex(0);
+	Serial.println(temp);
 }
